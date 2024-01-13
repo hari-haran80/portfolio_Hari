@@ -284,15 +284,31 @@ button:hover{
 .home_div{
     width: 100%;
     height: 100%;      
+    z-index: 100;
+    background-image:url(../images/wVkn-stars_bg.png);
+    animation: twinkle 80s linear infinite ;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+@keyframes twinkle {
+    0%{background-position: 0 0;}
+    100%{background-position: -1000px 0px;}
 }
 .img_div{
     width: 100%;
     height: 100vh;
 }
+#home{
+    z-index: -101;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
 .star_div1{
     position: absolute;
-    margin-top: -25%;
-    margin-left:-80% ;
+    margin-top: -12%;
+    margin-left:-40% ;
     z-index: -88;
     filter: contrast(500%);
     animation: animate 10s linear 0s infinite;
@@ -300,8 +316,8 @@ button:hover{
 .star_div2{
     position: absolute;
     z-index: -88;
-    margin-top: 10%;
-    margin-left: 70%;
+    margin-top: 2%;
+    margin-left: 45%;
     filter: contrast(500%);
     animation: animate 10s linear 0s infinite;
 }
@@ -315,13 +331,12 @@ button:hover{
 }
 
 .text{
-    position: absolute;
-    width: 50%;
+    position: relative;
+    width: 100%;
     height:auto;
-    margin-top: 300px;
-    margin-left: 22%;
+    top: 40%;
+    margin:auto;
     color: whitesmoke;
-    backdrop-filter: blur(20px);
     border: 1px solid transparent;
 }
 .diff_div{
@@ -500,10 +515,6 @@ button:hover{
     }
     .design{
         font-size: 50px;
-        text-align: left;
-    }
-    .start{
-        width: 210px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -538,10 +549,6 @@ button:hover{
     }  
 }
 @media screen and (max-width: 877px){
-    .text{
-        width: auto;
-    }
-
     /* -------------------whats app images-------------------- */
     .hari{
         margin-left: 100px;
@@ -549,6 +556,14 @@ button:hover{
     /* -------------------------------------------------- */
 }
 @media screen and (max-width: 768px){
+    .star_div1{
+        margin-top: -12%;
+        margin-left: -40%;
+    }
+    .star_div2{
+        margin-top: 10%;
+        margin-left: 70%;
+    }
     .text{
         margin-left: 0;
         width: 100%;
@@ -672,17 +687,18 @@ button:hover{
     .design{
         margin-top: 25px;
     }
-    .start{
-        margin-top: 25px;
-        width: auto;
-        margin-left: 25%;
+    .get_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
     }
     .para{
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 25px;
     }
     .diff_div{
-        display: block;
+        display: inline-block;
     }
 }
 @media screen and (max-width: 425px){
@@ -714,4 +730,21 @@ button:hover{
         width: 250px;
         height: 250px;
     }
+}
+@media screen and (max-width: 334px){
+    .home_div{
+        background-image: none;
+    }
+    .star_div1, .star_div2{
+        width: 70px;
+        height: 70px;
+    }
+    .star_div1{
+        margin-top: -70%;
+    }
+    .star{
+        width: 70px;
+        height: 70px;
+    }
+
 }
