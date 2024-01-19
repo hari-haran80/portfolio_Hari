@@ -446,6 +446,18 @@ h4{
     text-align: center;
     padding: 10px;
 }
+.write_review{
+    position: absolute;
+    width: 100%;
+    margin-top: -10px;
+}
+.review_link{
+    float: right;
+    margin-right: 10%;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 900;
+}
 .customer{
     width: 320px;
     height: 350px;
@@ -487,6 +499,13 @@ h4{
     margin-top: 15px;
     text-align: center;
 }
+.edit_review{
+    position: absolute;
+    margin-left: 170px;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: -30px;
+}
 .customer p{
     margin-top: 10px;
     font-size: 14px;
@@ -510,6 +529,21 @@ h4{
 .customer_name p{
     text-align: left;
     font-size: 12px;
+}
+.del_button{
+    width: 100%;
+}
+.del_buttonoriginal{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: aqua;
+    border: none;
+}
+.del_review{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    padding: 5px 73px;
 }
 .Profile{
     filter: brightness(120%);
@@ -677,6 +711,14 @@ subscribe:hover{
     /* -------------------whats app images-------------------- */
     .hari{
         margin-left: 100px;
+    }
+    .write_review{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
     }
     /* -------------------------------------------------- */
 }
