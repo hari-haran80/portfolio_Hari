@@ -348,9 +348,10 @@ button:hover{
     margin-right: auto;
     position: relative;
 }
-.diff_div button a:hover{
+.diff_div button sub1:hover{
     background-color: transparent;
     font-weight: normal;
+    transition: all 1s;
 }
 .design{
     text-align: center;
@@ -586,14 +587,36 @@ footer{
     text-align: center;
     font-size: 12px;
 }
-button:hover{
+subscribe:hover{
     background:red;
     color:white;
     transition: all 1s;
 }
 .link:hover, .last_link:hover{
+    transition: all 1s;
     color:red;
 }
+/* -------whats app icon------ */
+
+.whats_app{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 85vh;
+    margin-left:92% ;
+}
+.whats_app a{
+    color: green;
+    border-radius: 50px;
+    font-size: 55px;
+    font-weight: 900;
+}
+.fa-whatsapp:hover{
+    color: aqua;
+}
+
+/* -------end of whats app icon------ */
+
 
 
 
@@ -709,6 +732,11 @@ button:hover{
         display: none;
     }
     /* ----------------------------------------------- */
+}
+@media screen and (max-width: 655px){
+    .whats_app{
+        margin-left: 85%;
+    }
 }
 @media screen and (max-width: 655px){
     .end_div{
