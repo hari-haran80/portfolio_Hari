@@ -717,6 +717,7 @@ subscribe:hover{
     .hari{
         margin-left: 100px;
     }
+    /* -------------------------------------------------- */
     .write_review{
         position: relative;
         display: flex;
@@ -725,7 +726,6 @@ subscribe:hover{
         align-items: center;
         margin-top: 60px;
     }
-    /* -------------------------------------------------- */
 }
 @media screen and (max-width: 768px){
     .star_div1{
